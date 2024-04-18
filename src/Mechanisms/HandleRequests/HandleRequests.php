@@ -28,7 +28,7 @@ class HandleRequests extends Mechanism
     {
         return (string) str(
             route($this->updateRoute->getName(), [], false)
-        )->start('/');
+        );
     }
 
     function skipRequestPayloadTamperingMiddleware()
